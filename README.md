@@ -60,7 +60,9 @@ Ao baixar os repositórios entre em cada um deles e rode o segunte comando:
 ```
 
 A idéia é fazer com que esses dois apps se registrem no Eureka para que eles se integrem dentro do mesmo 
-ambiente através de DNS e com seus load balancers integrados. 
+ambiente através de DNS conforme exemplo abaixo:
+
+![images](./images/eureka-server02.png)
 
 
 ## 🔗 Referencias
