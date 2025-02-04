@@ -8,7 +8,7 @@ Esse projeto é um pequeno exemplo do uso da infra Eureka Server destinado a que
 Projeto de estudo da funcionalidade do Spring Cloud Eureka Server
 
 
-## Rode Localmente
+## Rode Localmente o Eureka
 
 Clone o projeto
 
@@ -40,6 +40,28 @@ Será mostrado o serviço rodando via browser conforme exemplo abaixo:
 
 
 ![](./images/eureka-server.png)
+
+## Registre Projetos no Eureka Server
+
+Como exemplo deixo um exemplo de dois repositóros que contém projeots que iteratem entre si utilizando 
+o Eureka Server para resolução de nomes.
+
+Faça o clone 
+
+```bash
+  git clone https://github.com/williamreges/lab-a01-app-repository-payment.git
+  git clone https://github.com/williamreges/lab-a01-app-bff-payment.git
+```
+
+Ao baixar os repositórios entre em cada um deles e rode o segunte comando:
+
+```bash
+  spring-boot:run
+```
+
+A idéia é fazer com que esses dois apps se registrem no Eureka para que eles se integrem dentro do mesmo 
+ambiente através de DNS e com seus load balancers integrados. 
+
 
 ## 🔗 Referencias
 * [Spring Cloud](https://spring.io/cloud)
